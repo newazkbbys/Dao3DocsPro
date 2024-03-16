@@ -6426,35 +6426,9 @@ function use_duihuanma(entity){
                 }
             }
         }
-        else if(entity.duihuanma=='苦力怕皮肤福利'){
-            dialog(`系统`,`兑换成功，获得皮肤：苦力怕\n右键皮肤库里可以使用`,entity)
-            if(entity.skins.includes('苦力怕')==false){
-                entity.skins.push('苦力怕');
-            }
-            savePlayer(entity)
-        }
-        else if(entity.duihuanma=='史蒂夫皮肤福利'){
-            dialog(`系统`,`兑换成功，获得皮肤：史蒂夫\n右键皮肤库里可以使用`,entity)
-            if(entity.skins.includes('史蒂夫')==false){
-                entity.skins.push('史蒂夫');
-            }
-            savePlayer(entity)
-        }
-        else if(entity.duihuanma=='无限飞行fl'){
-            dialog(`系统`,`兑换成功，获得无限飞行道具，右键点击背包可查看`,entity)
-            if(entity.bag.includes('无限飞行羽翼')==false){
-                entity.bag.push('无限飞行羽翼');
-            }
-            savePlayer(entity)
-        }
-        else if(entity.duihuanma=='旧版福利'){
-            dialog(`系统`,`欢迎来到全新的毕业生跑酷！已自动领取经验*1000`,entity)
-            entity.exp+=1000
-            savePlayer(entity)
-        }
-        else if(entity.duihuanma=='壹周年'){
-            dialog(`系统`,`欢迎来到全新的毕业生跑酷！已自动领取经验*3650`,entity)
-            entity.exp+=3650
+        else if(entity.duihuanma=='示例兑换码'){
+            dialog(`系统`,`兑换成功，获得10exp`,entity)
+            entity.exp+=10
             savePlayer(entity)
         }
         else{
@@ -7210,7 +7184,7 @@ world.onPlayerJoin(async({entity})=>{
                 entity.exp += 10000
                 entity.last_team = month+day
                 savePlayer(entity)
-                dialog(`组队福利领取成功`,`${entity.player.name}，欢迎使用组队功能来到本地图，1w经验已自动领取\n若您是队长，可以截图队伍界面后联系毕业生领取管理员`,entity)         
+                dialog(`组队福利领取成功`,`${entity.player.name}，欢迎使用组队功能来到本地图，1w经验已自动领取\n若您是队长，可以截图队伍界面后联系毕业生领取管理员`,entity)   
             }
             else{
                 dialog(`组队福利领取失败`,`${entity.player.name}，偷偷改链接是没用的哦~`,entity)
