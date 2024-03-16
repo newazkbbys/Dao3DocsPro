@@ -4824,78 +4824,7 @@ snowTexture
 
 更多代码示例
 
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
-18
-
-19
-
-20
-
-21
-
-22
-
-23
-
-24
-
-25
-
-26
-
-27
-
-28
-
-29
-
-30
-
-31
-
-32
-
-33
-
-34
-
-35
-
-36
-
+```javascript
 // 一半酸雨, 一半樱花飘落的场景效果, 跳起来场景效果消失
 
 world.addZone({
@@ -4965,6 +4894,7 @@ world.addZone({
   fogDensity: 0.02,
 
 })
+```
 
 ## ServerEvent
 
@@ -5062,18 +4992,7 @@ nextPage
 
 定义
 
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
+```javascript
 export type JSONValue =
 
   string
@@ -5085,6 +5004,7 @@ export type JSONValue =
   |{ [x: string]: JSONValue }
 
   | JSONValue[];
+```
 
 ## ListPageOption 列表翻页配置
 
