@@ -7298,6 +7298,78 @@ await sleep(1000)
 •snowTexture:string= &quot;&quot;
 区域内雪花纹理</p>
 <p>更多代码示例</p>
+<<<<<<< HEAD
+<pre class='hljs'><code><div><span class="hljs-comment">// 一半酸雨, 一半樱花飘落的场景效果, 跳起来场景效果消失</span>
+
+world.addZone({
+
+  <span class="hljs-attr">selector</span>: <span class="hljs-string">&#x27;player&#x27;</span>,
+
+  <span class="hljs-attr">bounds</span>: {
+
+    <span class="hljs-attr">lo</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">64</span>],
+
+    <span class="hljs-attr">hi</span>: [<span class="hljs-number">128</span>, <span class="hljs-number">10</span>, <span class="hljs-number">128</span>],
+
+  },
+
+  <span class="hljs-attr">rainEnabled</span>: <span class="hljs-literal">true</span>,
+
+  <span class="hljs-attr">rainDensity</span>: <span class="hljs-number">0.5</span>,
+
+  <span class="hljs-attr">rainSpeed</span>: <span class="hljs-number">0.5</span>,
+
+  <span class="hljs-attr">snowEnabled</span>: <span class="hljs-literal">true</span>,
+
+  <span class="hljs-attr">snowDensity</span>: <span class="hljs-number">0.5</span>,
+
+  <span class="hljs-attr">snowTexture</span>: <span class="hljs-string">&#x27;snow/bubble.part&#x27;</span>,
+
+  <span class="hljs-attr">snowFallSpeed</span>: -<span class="hljs-number">0.1</span>,
+
+  <span class="hljs-attr">fogEnabled</span>: <span class="hljs-literal">true</span>,
+
+  <span class="hljs-attr">fogColor</span>: <span class="hljs-keyword">new</span> GameRGBColor(<span class="hljs-number">0.5</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>),
+
+  <span class="hljs-attr">fogDensity</span>: <span class="hljs-number">0.02</span>,
+
+})
+
+world.addZone({
+
+  <span class="hljs-attr">selector</span>: <span class="hljs-string">&#x27;player&#x27;</span>,
+
+  <span class="hljs-attr">bounds</span>: {
+
+    <span class="hljs-attr">lo</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>],
+
+    <span class="hljs-attr">hi</span>: [<span class="hljs-number">128</span>, <span class="hljs-number">10</span>, <span class="hljs-number">64</span>],
+
+  },
+
+  <span class="hljs-attr">rainEnabled</span>: <span class="hljs-literal">true</span>,
+
+  <span class="hljs-attr">rainDensity</span>: <span class="hljs-number">0.5</span>,
+
+  <span class="hljs-attr">rainSpeed</span>: -<span class="hljs-number">0.5</span>,
+
+  <span class="hljs-attr">snowEnabled</span>: <span class="hljs-literal">true</span>,
+
+  <span class="hljs-attr">snowDensity</span>: <span class="hljs-number">0.5</span>,
+
+  <span class="hljs-attr">snowTexture</span>: <span class="hljs-string">&#x27;snow/sakura.part&#x27;</span>,
+
+  <span class="hljs-attr">snowFallSpeed</span>: <span class="hljs-number">0.1</span>,
+
+  <span class="hljs-attr">fogEnabled</span>: <span class="hljs-literal">true</span>,
+
+  <span class="hljs-attr">fogColor</span>: <span class="hljs-keyword">new</span> GameRGBColor(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.5</span>),
+
+  <span class="hljs-attr">fogDensity</span>: <span class="hljs-number">0.02</span>,
+
+})
+</div></code></pre>
+=======
 <p>1</p>
 <p>2</p>
 <p>3</p>
@@ -7373,6 +7445,7 @@ hi: [128, 10, 64],
 <p>fogColor: new GameRGBColor(1, 0, 0.5),</p>
 <p>fogDensity: 0.02,</p>
 <p>})</p>
+>>>>>>> 9d407ff9fa37673dc2906501a380cf67ec57f121
 <h2 id="serverevent" tabindex="-1">ServerEvent</h2>
 <p>类 - ServerEvent
 从客户端发往服务器的自定义事件。</p>
@@ -7462,6 +7535,20 @@ any
 </tbody>
 </table>
 <p>定义</p>
+<<<<<<< HEAD
+<pre class='hljs'><code><div><span class="hljs-keyword">export</span> type JSONValue =
+
+  string
+
+  | number
+
+  | boolean
+
+  |{ [x: string]: JSONValue }
+
+  | JSONValue[];
+</div></code></pre>
+=======
 <p>1</p>
 <p>2</p>
 <p>3</p>
@@ -7474,6 +7561,7 @@ any
 <p>| boolean</p>
 <p>|{ [x: string]: JSONValue }</p>
 <p>| JSONValue[];</p>
+>>>>>>> 9d407ff9fa37673dc2906501a380cf67ec57f121
 <h2 id="listpageoption-%E5%88%97%E8%A1%A8%E7%BF%BB%E9%A1%B5%E9%85%8D%E7%BD%AE" tabindex="-1">ListPageOption 列表翻页配置</h2>
 <p>类型别名 - ListPageOptions
 批量获取键值对的配置项。</p>
